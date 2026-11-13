@@ -3,6 +3,16 @@
 Estimates serving cost from generated telemetry data and surfaces one
 actionable cost-saving result through a CLI or a static page.
 
+## Usage
+
+CLI report command (run from the repository root):
+
+`python3 estimator.py <telemetry-file> <pricing-file>`
+
+The first positional argument is the telemetry file, the second is the
+pricing file. On success it exits 0 and prints the report to stdout.
+Run the test suite with `python3 -m unittest discover -s tests -v`.
+
 ## Scope
 
 - In scope: reading a local file of generated telemetry records, applying a
